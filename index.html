@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper and Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a3cc01a5d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="container">Rock, Paper and Scissors</h1>
+    </header>
+    <main>
+      <section class="scoreboard">
+        <div class="container">
+          <h2>Scoreboard</h2>
+          <div>
+            <p>Player: <span data-player-score>0</span></p>
+            <p>Computer: <span data-computer-score>0</span></p>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <h2 data-game-result=""></h2>
+      </section>
+      <section class="choices">
+        <div class="container">
+          <div class="player-choice">
+            <h2>Player</h2>
+            <div data-player-choice>
+              <i class="far fa-hand-rock hide" data-game="rock"></i>
+              <i class="far fa-hand-paper hide" data-game="paper"></i>
+              <i class="far fa-hand-scissors hide" data-game="scissors"></i>
+            </div>
+          </div>
+          <div class="computer-choice">
+            <h2>Computer</h2>
+            <div data-computer-choice>
+              <i class="far fa-hand-rock hide" data-game="rock"></i>
+              <i class="far fa-hand-paper hide" data-game="paper"></i>
+              <i class="far fa-hand-scissors hide" data-game="scissors"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rock-papers-scissors">
+        <h2>Pick one</h2>
+        <div>
+          <button data-btn>
+            <i class="far fa-hand-rock" data-game="rock"></i>
+          </button>
+          <button data-btn>
+            <i class="far fa-hand-paper" data-game="paper"></i>
+          </button>
+          <button data-btn>
+            <i class="far fa-hand-scissors" data-game="scissors"></i>
+          </button>
+        </div>
+      </section>
+      <article class="modal hidden">
+        <h3 data-h2>hi</h3>
+        <p data-p>test</p>
+        <button data-restart>Restart</button>
+      </article>
+    </main>
+  </body>
+</html>

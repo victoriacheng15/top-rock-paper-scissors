@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    hsl(203, 100%, 41%),
+    hsl(199, 100%, 44%),
+    hsl(194, 100%, 45%),
+    hsl(190, 100%, 47%),
+    hsl(185, 100%, 47%),
+    hsl(184, 82%, 53%),
+    hsl(182, 76%, 56%),
+    hsl(179, 70%, 58%),
+    hsl(181, 60%, 51%),
+    hsl(183, 66%, 45%),
+    hsl(184, 77%, 38%),
+    hsl(185, 100%, 30%)
+  );
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 15vw, 2.25rem);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+div h2 {
+  margin-bottom: 1rem;
+}
+
+i {
+  font-size: clamp(2rem, 20vw, 8rem);
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: min(90%, 43.75em);
+  margin: 0 auto;
+}
+
+header {
+  background: hsla(0, 0%, 100%, 0.75);
+  padding: 1.25rem 0;
+  text-align: center;
+  border-bottom: 5px solid hsl(268, 10%, 30%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
+}
+
+/* ========================= grouped classes ========================= */
+.scoreboard div,
+.choices div {
+  text-align: center;
+  font-weight: 700;
+}
+
+.choices .container,
+.rock-papers-scissors div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.result,
+.rock-papers-scissors {
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+/* ========================= non-grouped ========================= */
+.hide {
+  display: none;
+}
+
+.result {
+  text-align: center;
+  height: 5rem;
+}
+
+.choices {
+  height: 12rem;
+}
+
+.scoreboard .container div p:first-child {
+  margin-bottom: 1rem;
+}
+
+.rock-papers-scissors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  --width: min(90%, 350px);
+  --height: 200px;
+  padding: 1rem;
+  position: absolute;
+  inset: calc(50vh - calc(var(--height) / 2)) 0 0 calc(50vw - calc(var(--width) / 2));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  background: hsl(194, 100%, 45%);
+  border: 3px solid hsl(268, 10%, 30%);
+  border-radius: 20px;
+  width: var(--width);
+  height: var(--height);
+}
+
+.modal.hidden {
+  visibility: hidden;
+}
+
+.modal h3 {
+  font-size: 2rem;
+}
+
+.modal p {
+  font-size: 1.5rem;
+}
+
+.modal button {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid hsl(268, 10%, 30%);
+  border-radius: 10px;
+}
+
+.modal button:hover {
+  background: hsl(185, 100%, 47%);
+}
