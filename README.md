@@ -18,6 +18,6 @@ The player will pick one from rock or paper or sicssors. And the bot will random
 - Follow the "DRY" (Don't Repeat Yourself) principle
 - Select elements with dataset attributes
 
-## Live Demo
+### Live Demo
 
 See the [demo](https://victoriacheng15.github.io/TOP-rock-paper-scissors/)
