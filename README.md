@@ -1,6 +1,6 @@
 # Rock Paper Scissors Project
 
-## Overview
+### Overview
 
 This is a project based on **The Odin Project**'s curriculum. Please see [here](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/rock-paper-scissors) for more informaiton.
 
