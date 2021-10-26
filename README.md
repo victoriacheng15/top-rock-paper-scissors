@@ -20,4 +20,4 @@ The player will pick one from rock or paper or sicssors. And the bot will random
 
 ### Live Demo
 
-See the [demo](https://victoriacheng15.github.io/TOP-rock-paper-scissors/)
+See the [demo](https://victoriacheng15.github.io/top-rock-paper-scissors/)
